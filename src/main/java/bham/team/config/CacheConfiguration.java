@@ -50,6 +50,21 @@ public class CacheConfiguration {
             createCache(cm, bham.team.domain.User.class.getName());
             createCache(cm, bham.team.domain.Authority.class.getName());
             createCache(cm, bham.team.domain.User.class.getName() + ".authorities");
+            createCache(cm, bham.team.domain.UserProfile.class.getName());
+            createCache(cm, bham.team.domain.UserProfile.class.getName() + ".events");
+            createCache(cm, bham.team.domain.UserProfile.class.getName() + ".availiabilityBlocks");
+            createCache(cm, bham.team.domain.UserProfile.class.getName() + ".sharedEvents");
+            createCache(cm, bham.team.domain.UserProfile.class.getName() + ".findTimes");
+            createCache(cm, bham.team.domain.Event.class.getName());
+            createCache(cm, bham.team.domain.Event.class.getName() + ".participants");
+            createCache(cm, bham.team.domain.Friendship.class.getName());
+            createCache(cm, bham.team.domain.ScheduleRequest.class.getName());
+            createCache(cm, bham.team.domain.AvailiabilityBlock.class.getName());
+            createCache(cm, bham.team.domain.FindTime.class.getName());
+            createCache(cm, bham.team.domain.FindTime.class.getName() + ".participants");
+            createCache(cm, bham.team.domain.FindTime.class.getName() + ".suggestions");
+            createCache(cm, bham.team.domain.Suggestion.class.getName());
+            createCache(cm, bham.team.domain.Suggestion.class.getName() + ".findTimes");
             // jhipster-needle-ehcache-add-entry
         };
     }
